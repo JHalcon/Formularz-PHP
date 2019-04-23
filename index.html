@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"   integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" >
+    <title>Retro audio</title>
+    <style>
+        body {
+            background-color: floralwhite;
+        }
+
+        header {
+            
+            
+             margin-left: 5%;
+            margin-right: 5%;
+            background-color: grey;
+         
+            height: 120px;
+            font-family: Verdana;
+            border-radius: 5px;
+            padding-top: 10px;
+			border: 2px solid black;
+
+
+
+        }
+          footer {
+            
+            
+             margin-left: 5%;
+            margin-right: 5%;
+            background-color:floralwhite ;
+         display: flex;
+              justify-content: center;
+            height: 120px;
+            font-family: Verdana;
+              color:gray;
+              font-size: 20px;
+            border-radius: 5px;
+            padding-top: 10px;
+              align-items: center;
+
+
+
+        }
+        header h1 {
+            text-align: center;
+            color: white;
+            font-family: Roboto;
+
+        }
+
+        header h3 {
+            text-align: center;
+        }
+
+        .produkty {
+
+            width: 400px;
+        }
+
+        
+
+        img {
+
+            display: flex;
+            margin: auto;
+            width: 400px;
+            height: 250px;
+
+        }
+
+        [class*="col-"] {
+            margin-bottom: 10px;
+        }
+
+        #dane {
+           
+            border: 2px solid rgb(231, 211, 27);;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: gainsboro;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        input {
+            margin-bottom: 8px;
+            ;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+
+            font-family: serif;
+			font-style:italic;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        h2 {
+
+
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .ile {
+            display: flex;
+            justify-content: center;
+        }
+
+        #oferta {
+
+            font-family: Calibri;
+            letter-spacing: 3px;
+            margin: 8px;
+			color:rgb(231, 211, 27);
+			text-shadow: 3px 3px 5px black;
+			font-size:50px;
+        }
+        .grid{
+           
+            display: grid;
+            
+              grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  
+  grid-column-gap: 20px;
+            grid-column-gap: 20px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .item{
+
+            background-color: rgb(231, 211, 27);;
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom:20px;
+        }
+		input[type=submit]{
+		background-color: rgb(231, 211, 27);;
+		height:50px;
+		border-radius:7px;
+		font-size:15px;
+		font-weight: bold;
+    
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(201, 201, 201, 0.918);
+}
+input:hover {
+    background-color: rgba(199, 196, 196, 0.918);
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>RETRO AUDIO</h1>
+        <h3>Sklep z oldschoolowym sprzętem audio</h3>
+    </header>
+    
+        <h1 id="oferta">NASZA OFERTA
+        </h1>
+        <form action="form.php" method="POST">
+            <div class="grid">
+
+                <div class="item">
+                    <h2>Kaseta mg Panasonic</h2>
+                    <img class="produkty" src="img/kaseta.jpg" alt="kaseta"><br>
+                    <h5>Cena za sztukę: 10zł</h5><br>
+
+                    <div class="ile"> Ilość:<input type="number" min="0" max="20" name="1"></div>
+                </div>
+                <div class="item">
+                    <h2>Walkman</h2>
+                    <img src="img/walkman.jpg" alt="walkman" class="produkty"><br>
+                    <h5>Cena za sztukę : 50 zł</h5><br>
+                    <div class="ile">Ilość: <input type="number" min="0" max="20" name="2"></div>
+                </div>
+
+                <div class="item">
+                    <h2>Discman</h2><img src="img/discman.jpg" alt="discman" class="produkty"><br>
+                    <h5>Cena za sztukę : 130 zł
+                    </h5><br>
+                    <div class="ile">Ilość: <input type="number" min="0" max="20" name="3"></div>
+                </div>
+
+                <div class="item">
+                    <h2>Bumbox</h2><img src="img/bumbox.jpg" alt="bumbox" class="produkty"><br>
+                    <h5>Cena za sztukę : 250 zł
+                    </h5><br>
+                    <div class="ile"> Ilość: <input type="number" min="0" max="20" name="4"></div>
+                </div>
+
+                <div class="item">
+                    <h2>Gramofon</h2><img src="img/gramofon.jpg" alt="bumbox" class="produkty"><br>
+                    <h5> Cena za sztukę : 800 zł</h5><br>
+                    <div class="ile"> Ilość: <input type="number" min="0" max="20" name="5"></div>
+                </div>
+
+                <div class="item">
+                    <h2>Magnetofon szpulowy Unitra Aria </h2>
+                    <img src="img/szpulowy.jpg" alt="aria" class="produkty"><br>
+                    <h5>Cena za sztukę : 400 zł
+                    </h5><br>
+                    <div class="ile"> Ilość: <input type="number" min="0" max="20" name="6"></div>
+                </div>
+                <div class="item">
+                    <h2> Magnetofon Tachnics</h2>
+                    <img src="img/technics.jpg" alt="technics" class="produkty"><br>
+                    <h5>Cena za sztukę : 320 zł
+                    </h5><br>
+                    <div class="ile"> Ilość: <input type="number" min="0" max="20" name="7"></div>
+                </div>
+                 <div class="item">
+                    <h2>Zestaw do czyszczenia płyt</h2>
+                    <img src="img/zestaw.jpg" alt="zestaw" class="produkty"><br>
+                    <h5>Cena za sztukę : 210 zł
+                    </h5><br>
+                    <div class="ile"> Ilość: <input type="number" min="0" max="20" name="8"></div>
+                </div>
+                <div class="item">
+                    <h2>Tuner radiowy Unitra AS 215</h2>
+                    <img src="img/tuner.jpg" alt="tuner" class="produkty"><br>
+                    <h5>Cena za sztukę : 110 zł
+                    </h5><br>
+                    <div class="ile"> Ilość: <input type="number" min="0" max="20" name="9"></div>
+                </div>
+                <div class="item">
+                    <h2>Wzmacniacz Unitra Diora WS 315 </h2>
+                    <img src="img/wzmak.jpg" alt="wzmacniacz" class="produkty"><br>
+                    <h5>Cena za sztukę : 190 zł
+                    </h5><br>
+                    <div class="ile"> Ilość: <input type="number" min="0" max="20" name="10"></div>
+                </div>
+            </div>
+
+
+  
+
+    <div id="dane">
+        <h2>Podaj swoje dane osobowe</h2>
+        Imię<br>
+        <input type="text" name="imie" size="30" required><br> Nazwisko
+        <br>
+        <input type="text" name="nazwisko" max-length="60" required><br> Data urodzenia<br>
+        <input type="date" name="data" max-length="60" size="50" required><br> Płeć
+        <input type="radio" name="plec" value="kobieta">kobieta
+        <input type="radio" name="plec" value="mężczyzna">mężczyzna
+        <br> E-mail
+        <br>
+        <input type="email" name="mail" max-length="80" size="50" required><br> Nr. telefonu <br>
+        <input type="text" name="tel" placeholder="601-102-203" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" max-length="60" size="10" required><br>
+
+        <input type="checkbox" required>Akceptuję regulamin strony<br>
+        <input type="submit" value="Zatwierdź zamówienie">
+    </div>
+
+    </form>
+    <footer> Przy zakupie minimum 5 sztuk 10% zniżki!
+    </footer>
+    
+</body>
+
+</html>
